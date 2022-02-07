@@ -1,0 +1,15 @@
+{
+  "name": "ニコ生シークバーOFF",
+  "manifest_version": 3,
+  "version": "0.2",
+  "description": "ニコ生のシークバーをOFFにします。ニコ生ゲームで遊んでいるときに誤クリックを防いでくれます。",
+  "permissions": [
+    "storage"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://live.nicovideo.jp/*"],
+      "js": ["background.js"]
+    }
+  ]
+}
